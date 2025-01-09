@@ -1,0 +1,162 @@
+body {
+  background-color: #f6f6f6;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #cfd8dc;
+  padding: 15px;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 22px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 1%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  background-color: #f4eddd; 
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.change {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+h3, h4 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+button {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin-top: 50px;
+  letter-spacing: 4px;
+  font-weight:bold;
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.text {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 20px;
+}
+
+.linkContact {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width:800px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:500px) {
+  nav {
+    padding: 10px;
+  }
+
+  .link {
+    padding: 8px 20px;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .head {
+    padding: 20px;
+  }
+}
