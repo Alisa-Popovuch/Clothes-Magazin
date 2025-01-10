@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { datasale } from "./datasale";
-import ButtonsSale from "./buttonsSale";
+import ButtonsSale from "./ButtonSale";
 import ClotherSale from "./ClothesSale";
 
 function Sale() {

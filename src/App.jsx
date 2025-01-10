@@ -1,5 +1,3 @@
-//import { useState } from "react";
-//import { data } from "./data";
 import React from 'react';
 import {
   BrowserRouter as Router,
