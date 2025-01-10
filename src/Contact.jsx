@@ -1,5 +1,3 @@
-import Map from './Map';
-
 function Contact() {
     return(
         <div>
@@ -29,14 +27,6 @@ function Contact() {
                     <p className="text">Mon-Fri from 8am to 5pm</p>
                     <a href="tel:+4915000000000" className="linkContact" target="_blank">+4915000000000</a>
                 </div>
-            </div>
-            <div className="map">
-                <img src="https://img.icons8.com/?size=100&id=1KqQ3aonUloq&format=png&color=000000" width={35} alt="icon" />
-                <br></br>
-                <h2>Visit us</h2>
-                <p>Visit our office HQ</p>
-                <br></br>
-                <Map/>
             </div>
         </div>
     )
