@@ -18,6 +18,12 @@ Used here:</p>
   <li>how to do dynamic routing in my current project.</li>
 </ul>
 
+### 🛠️ In the future I would like to add to the application:
+<ul>
+   <li>cart so that the user can add the product they like to it;</li>
+   <li>a form that can be used to place and pay for an order for a product.</li>
+</ul>
+
 ### 🛠️ Languages and Tools 
   <div>
       <img src="https://img.icons8.com/?size=48&id=20909&format=png" alt="HTML" width="40px"/>
