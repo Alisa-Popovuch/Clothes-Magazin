@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Clothes({ anyClothes }) {
 
     return(
@@ -6,7 +8,9 @@ function Clothes({ anyClothes }) {
                 const { id, name, searchTerm, price, image } = element;
                 return (
                     <div key={ id } className="product-card">
-                        <img src={ image } alt="clothes" width={400} height={500}/>
+                        <Link to= { "/about/${ item.title }" }>
+                            <img src={ image } alt="clothes" width={400} height={500}/>
+                        </Link>
                         <div className="product-info">
                             <h3>{ name }</h3>
                             <h4> $ { price }</h4>

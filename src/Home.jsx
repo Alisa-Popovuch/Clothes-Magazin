@@ -6,18 +6,12 @@ import Clothes from "./Clothes";
 function Home() {
     const [clothes, setClothes] = useState(data);
 
-    const chosenClothes = (searchTerm) => {
-        const newClothes = data.filter (element => 
-            element.searchTerm === searchTerm);
-            setClothes(newClothes);
-}
-
     return (
         <div>
-            <div className="cont">
+            <div className="container">
                 <h2 className="back">Free Standard Shipping</h2>
             </div>
-            <Buttons filteredClothes = { chosenClothes }/>
+            <Buttons setClothes = { setClothes } />
             <Clothes anyClothes = { clothes }/>
         </div>
 )

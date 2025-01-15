@@ -9,6 +9,7 @@ import './App.css';
 import Home from './Home';
 import Sale from './Sale';
 import Contact from './Contact';
+import AboutProduct from './AboutProduct';
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
       <Link to="contact" className='link'>Contact Us</Link>
     </nav>
     <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/sale' element={<Sale/>} />
-      <Route path='/contact'  element={<Contact/>} />
+      <Route path='/' element={ <Home/> } />
+      <Route path='/sale' element={ <Sale/> } />
+      <Route path='/contact' element={ <Contact/> } />
+      <Route path='/about/:title' element={ <AboutProduct/> } />
     </Routes>
   </Router>
 }
