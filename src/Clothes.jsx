@@ -14,6 +14,9 @@ function Clothes({ anyClothes }) {
                         <div className="product-info">
                             <h3>{ name }</h3>
                             <h4> $ { price }</h4>
+                        <Link to= { "/about/${ item.title }" }>
+                            <button className="change">Show more</button>
+                        </Link>
                         </div>
                     </div>
                 )
