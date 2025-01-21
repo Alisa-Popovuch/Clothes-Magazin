@@ -2,11 +2,6 @@ body {
   background-color: #f6f6f6;
 }
 
-.btn {
-  width: 1300px;
-  background-color: black;
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -123,6 +118,76 @@ h2 {
   padding: 20px;
 }
 
+.about {
+  display: flex;
+  padding: 30px;
+}
+
+.aboutSale {
+  display: flex;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+h1 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.cardSale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.btn {
+  background-color: black;
+  color: #cfd8dc;
+  border: none;
+  width: 25%;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #cfd8dc;
+  color: black;
+  border: 1px solid black;
+}
+
+.sizeContainer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.size {
+  background-color: white;
+  border: 1px solid black;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 40%;
+}
+
+.size:hover {
+  background-color: #cfd8dc;
+}
+
 @media (max-width:800px) {
   .products {
     flex-direction: column;
@@ -130,15 +195,14 @@ h2 {
     flex-wrap: nowrap;
   }
 
-  .product-info {
+  .product-info, .aboutSale, .about, .head {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .head {
-    flex-direction: column;
-    align-items: center;
+  .btn {
+    padding: 20px;
   }
 }
 
@@ -167,5 +231,18 @@ h2 {
 
   .head {
     padding: 20px;
+  }
+
+  .card, .cardSale {
+    padding: 5px;
+  }
+
+  .btn {
+    width: 150px;
+    padding: 17px;
+  }
+
+  .imgSale {
+    width: 400px;
   }
 }

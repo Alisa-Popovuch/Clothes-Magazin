@@ -4,16 +4,16 @@ function ClothesSale ({ anySaleClothes }) {
     return(
         <div className="products">
             { anySaleClothes.map ((element => {
-                const { id, name, searchTerm, price, image } = element;
+                const { id, name, searchTerm, title, price, image } = element;
                 return (
                     <div key={ id } className="product-card">
-                        <Link to={"/about/${ item.title }"}>
+                        <Link to={`/about/${ title }`}>
                             <img src={ image } width={ 400 } height={ 500 } alt="sale clothes" />
                         </Link>
                         <div className="product-info">
                             <h3>{ name }</h3>
                             <h4>$ { price }</h4>
-                            <Link to={ "about/${ item.title }" }>
+                            <Link to={`/about/${ title }`}>
                                 <button className="change">Show more</button>
                             </Link>
                         </div>
